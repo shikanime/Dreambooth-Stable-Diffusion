@@ -4,8 +4,8 @@ from PIL import Image
 from tqdm import tqdm
 import numpy as np
 import torch
-from main import instantiate_from_config
-from ldm.models.diffusion.ddim import DDIMSampler
+from dreambooth_stable_diffusion.main import instantiate_from_config
+from dreambooth_stable_diffusion.ldm.models.diffusion.ddim import DDIMSampler
 
 
 def make_batch(image, mask, device):

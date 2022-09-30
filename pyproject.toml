@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "dreambooth_stable_diffusion"
+version = "0.1.0"
+description = "Implementtaion of Google's Dreambooth with Stable Diffusion"
+authors = ["William Phetsinorath <william.phetsinorath@shikanime.studio>", "Xavier <xiaozhisheng950@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.8.10"
+numpy = "1.22.3"
+torchvision = "0.11.3"
+albumentations = "1.1.0"
+opencv-python = "4.2.0.34"
+pudb = "2019.2"
+imageio = "2.14.1"
+imageio-ffmpeg = "0.4.7"
+pytorch-lightning = "1.5.9"
+omegaconf = "2.1.1"
+test-tube = "~0.7.5"
+streamlit = "~0.73.1"
+Pillow = "9.0.1"
+einops = "0.4.1"
+setuptools = "59.5.0"
+torch-fidelity = "0.3.0"
+transformers = "4.18.0"
+torchmetrics = "0.6.0"
+kornia = "0.6"
+torch = [
+    { url = "https://download.pytorch.org/whl/cu102/torch-1.10.2%2Bcu102-cp38-cp38-linux_x86_64.whl", markers = "sys_platform == 'linux'" },
+    { url = "https://download.pytorch.org/whl/cu102/torch-1.10.2%2Bcu102-cp38-cp38-win_amd64.whl", markers = "sys_platform == 'win32'" },
+    { version = "1.10.2", markers = "sys_platform == 'darwin'" }
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
